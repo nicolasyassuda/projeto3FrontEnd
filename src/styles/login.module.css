@@ -1,3 +1,27 @@
 .background{
-    background-image: url(/public/imgs/backgroundImage.jpg);
+    height: 100%;
+    width: 100%;
+}
+.input{
+    width: 20vw;
+    height: 4vh;
+    border-radius: 1vw;
+    background-color: #436770;
+    border: 0.1vw solid gray;
+    color: white;
+    padding-left: 0.5vw;
+}
+.input::placeholder{
+    color: white;
+}
+.btn{
+    margin-top: 15vh;
+    width: 10vw;
+    height: 8vh;
+    border-radius: 10vh;
+    background-color: red;
+    border: 0.5vw solid rgba(224, 7, 7, 0.757);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
