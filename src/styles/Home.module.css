@@ -5,3 +5,43 @@
     background-color: orange;
     width: 100vw;
 }
+
+.imagem-container {
+  position: relative;
+  text-align: center
+}
+
+.Titulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 0
+}
+
+.imagem {
+    
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    background-color: orange;
+    background-attachment: fixed;
+    /* Outros estilos */
+  }
+.infos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 70%;
+    padding: 100px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    
+}
+
