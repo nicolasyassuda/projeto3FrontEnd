@@ -1,0 +1,103 @@
+/*Aqui é  a parte dos filmes seleionados*/
+.container {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerInfos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomeFilme {
+    position: relative;
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: table;
+    margin: 40px auto;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.nomeFilme::before,
+.nomeFilme::after {
+    content: attr(data-text);
+    transition: 0.6s;
+}
+
+.nomeFilme::before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    text-shadow: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    -webkit-mask: repeating-linear-gradient(45deg, transparent 0 3px, rgba(0, 0, 0, 0.5) 0 6px);
+    mask: repeating-linear-gradient(45deg, transparent 0 3px, rgba(0, 0, 0, 0.5) 0 6px);
+}
+
+.nomeFilme:hover {
+    transform: translate(-10px, -10px);
+}
+
+.nomeFilme:hover::before {
+    text-shadow: 1px 1px, 2px 2px, 3px 3px, 4px 4px, 5px 5px, 6px 6px, 7px 7px, 8px 8px, 9px 9px, 10px 10px;
+}
+
+/* Home.module.css */
+
+.btn {
+    margin-top: 1vh;
+    width: 17vw;
+    height: 8vh;
+    border-radius: 3vh;
+    background: linear-gradient( to right,#ff0000, #890000);
+    border: 0.5vw solid rgba(240, 240, 240, 1);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.poster {
+    display: block;
+    margin: 1vh auto;
+    height: 600px;
+    width: auto;
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 10px;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.infos {
+    display: inline-block;
+    margin: 20px auto;
+
+}
+
+.infoContainer {
+
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    /* Ajuste a largura conforme necessário */
+    height: auto;
+    background-color: #f1f1f1;
+    align-items: center;
+}
+.sinopseText{
+    text-align: justify;
+    font-size: 20px;
+}

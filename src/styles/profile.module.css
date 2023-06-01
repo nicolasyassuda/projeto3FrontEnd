@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 32px;
+}
+
+.imagem {
+    height: 300px;
+    width: 250px;
+  }
+
+.filme {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 25%;
+    justify-content: center;
+    margin-bottom: 10vh;
+    flex-direction: row;
+    align-items: center;
+}

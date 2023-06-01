@@ -1,93 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Sigmar&display=swap');
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  background-color: orange;
-  width: 100vw;
+  background: linear-gradient( to bottom,#ff0000, #890000);
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 87vw;
   z-index: 100;
+  font-family: 'Nunito', sans-serif;
 }
 
-
-
-/*Aqui é  a parte dos filmes seleionados*/
-.container {
-  background-color: rgba(0, 0, 0, 0);
-  display: block;
-  height: auto;
-
+.imagem {
+  height: 300px;
+  width: 250px;
 }
 
-.nomeFilme {
-  position: relative;
-  font-size: 5em;
-  letter-spacing: 10px;
-  font-family: 'Roboto', sans-serif;
-  display: table;
-  margin: 40px auto;
-  cursor: pointer;
-  transition: 0.6s;
-}
-
-.nomeFilme::before,
-.nomeFilme::after {
-  content: attr(data-text);
-  transition: 0.6s;
-}
-
-.nomeFilme::before {
-  left: 0;
-  top: 0;
+.imagem:hover {
   position: absolute;
-  z-index: -1;
-  text-shadow: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  -webkit-mask: repeating-linear-gradient(45deg, transparent 0 3px, rgba(0, 0, 0, 0.5) 0 6px);
-  mask: repeating-linear-gradient(45deg, transparent 0 3px, rgba(0, 0, 0, 0.5) 0 6px);
+  height: 400px;
+  width: 333.33325px;
+  margin-top: -20vh;
 }
 
-.nomeFilme:hover {
-  transform: translate(-10px, -10px);
-}
-
-.nomeFilme:hover::before {
-  text-shadow: 1px 1px, 2px 2px, 3px 3px, 4px 4px, 5px 5px, 6px 6px, 7px 7px, 8px 8px, 9px 9px, 10px 10px;
-}
-
-/* Home.module.css */
-
-
-.poster {
-  display: block;
-  margin: 20px auto;
-  height: 600px;
-  width: auto; /* Ajuste o tamanho conforme necessário */
-  border-radius: 10px;
-}
-
-.rating-container {
+.filme {
   display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  width: 25%;
   justify-content: center;
+  margin-bottom: 10vh;
+  flex-direction: column;
   align-items: center;
-  margin: 20px auto;
 }
-
-.infos {
-  display: inline-block;
-  margin: 20px auto;
- 
-}
-
-.infoContainer {
-  
-  flex: 1;
-  display: flex;
-  margin: 30px;
-  padding: 50px;
-  width: calc(50% - 20px); /* Ajuste a largura conforme necessário */
-  height: auto;
-  background-color: #f1f1f1;
-  align-items: center;
+.texto-vazio{
+  color: rgba(255, 255, 255, 0);
 }

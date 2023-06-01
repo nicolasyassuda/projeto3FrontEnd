@@ -1,7 +1,9 @@
+
 html{
   margin: 0px;
 }
 body{
   margin:0px;
-  background-color: #00000079;
+  background: linear-gradient( to bottom,#efeeef, #ffeeef);
+  
 }

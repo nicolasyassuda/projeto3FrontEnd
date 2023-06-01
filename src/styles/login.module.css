@@ -6,24 +6,24 @@
 .input {
     width: 20vw;
     height: 4vh;
-    border-radius: 1vw;
-    background-color: #436770;
+    border-radius: 10px;
+    background-color: #ffeeef;
     border: 0.1vw solid gray;
-    color: white;
+    color: black;
     padding-left: 0.5vw;
 }
 
 .input::placeholder {
-    color: white;
+    color: #535353;
 }
 
 .btn {
     margin-top: 15vh;
-    width: 10vw;
+    width: 15vw;
     height: 8vh;
-    border-radius: 10vh;
-    background-color: red;
-    border: 0.5vw solid rgba(224, 7, 7, 0.757);
+    border-radius: 3vh;
+    background: linear-gradient( to right,#ff0000, #890000);
+    border: 0.5vw solid rgba(00, 0, 0, 1);
     font-size: 30px;
     color: white;
     cursor: pointer;
